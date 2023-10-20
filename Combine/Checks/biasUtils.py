@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+#from os import *
+from os import system
 
 def rooArgSetToList(argset): ## taken from Andrea Marini's great repo here: https://github.com/amarini/rfwsutils/blob/master/wsutils.py#L300-L313
     """creates a python list with the contents of argset (which should be a RooArgSet)"""
@@ -26,22 +28,22 @@ def raiseFailError(itoy, lax=False):
 def shortName(name):
     return name.split('_')[-1]
 
-def toyName(name, split=None):
-    retval = 'BiasToys/biasStudy_%s_toys.root'%name
-    if split is not None: 
+def toyName(name, split=None,n="M1"):
+    retval = 'BiasToys_%s/biasStudy_%s_toys.root'%(n,name)
+    if split is not None:
         split = int(split)
         retval = retval.replace(name,'%s_split%g'%(name,split))
     return retval
 
-def fitName(name, split=None):
-    retval = 'BiasFits/biasStudy_%s_fits.root'%name
-    if split is not None: 
+def fitName(name, split=None,n="M1"):
+    retval = 'BiasFits_%s/biasStudy_%s_fits.root'%(n,name)
+    if split is not None:
         split = int(split)
         retval = retval.replace(name,'%s_split%g'%(name,split))
     return retval
 
-def plotName(name):
-    return 'BiasPlots/biasStudy_%s_pulls'%name
+def plotName(name,n="M1"):
+    return 'BiasPlots_%s/biasStudy_%s_pulls'%(n,name)
 
 def run(cmd, dry=False):
    print cmd

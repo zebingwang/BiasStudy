@@ -1,0 +1,7 @@
+mv: target 'BiasFits_M30/biasStudy_gauxlau1_split0_fits.root' is not a directory
+mv: target 'BiasFits_M30/biasStudy_gauxlau1_split1_fits.root' is not a directory
+mv: target 'BiasFits_M30/biasStudy_gauxlau1_split2_fits.root' is not a directory
+mv: target 'BiasFits_M30/biasStudy_gauxlau1_split3_fits.root' is not a directory
+Error in <TFile::TFile>: file BiasFits_M30/*gauxlau1*split*.root does not exist
+Error in <TFileMerger::AddFile>: cannot open file BiasFits_M30/*gauxlau1*split*.root
+hadd exiting due to error in BiasFits_M30/*gauxlau1*split*.root

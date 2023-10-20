@@ -1,0 +1,12 @@
+SysError in <TFile::ReadBuffer>: error reading from file BiasToys_M14/biasStudy_gauxlau1_split1_toys.root (No such file or directory)
+Error in <TKey::ReadFile>: Failed to read data.
+Toy toy_392 not found in BiasToys_M14/biasStudy_gauxlau1_split1_toys.root. List follows:
+SysError in <TFile::Flush>: error flushing file higgsCombine_M14_gauxlau1_split1.MultiDimFit.mH125.123456.root (Permission denied)
+mv: failed to access 'BiasFits_M14/biasStudy_gauxlau1_split1_fits.root': Permission denied
+Usage: combine file1 OP file2
+mv: failed to access 'BiasFits_M14/biasStudy_gauxlau1_split2_fits.root': Permission denied
+Usage: combine file1 OP file2
+mv: failed to access 'BiasFits_M14/biasStudy_gauxlau1_split3_fits.root': Permission denied
+SysError in <TFile::TFile>: file BiasFits_M14/biasStudy_gauxlau1_fits.root can not be opened (Permission denied)
+Error in <TFileMerger::OutputFile>: cannot open the MERGER output file 
+hadd error opening target file (does BiasFits_M14/biasStudy_gauxlau1_fits.root exist?).
